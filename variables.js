@@ -11,12 +11,11 @@ render('variables1', () => {
 // TODO: Fix this code.
 render('variables2', () => {
   const bar = 'bar';
-  bar = 'bar';
   return bar;
 });
 
 // TODO: Fix this code.
 render('variables3', () => {
-  baz = 'baz';
+  const baz = 'baz';
   return baz;
 });
