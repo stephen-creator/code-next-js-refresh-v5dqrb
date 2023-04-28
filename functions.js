@@ -6,6 +6,8 @@ render('functions1', () => {
   const translate = (acronym) => {
     if (acronym === 'lol') {
       return 'laugh out loud';
+    } else if (acronym === 'idk') {
+      return 'i do not know';
     } else {
       throw new Error(`idk how to translate: '${acronym}'`);
     }
@@ -17,7 +19,7 @@ render('functions1', () => {
 // TODO: Write a function that returns the bar property of an object.
 render('functions2', () => {
   const getBar = (object) => {
-
+    return object.bar;
   };
 
   return getBar({ foo: 'foo', bar: 'bar' });
@@ -27,9 +29,7 @@ render('functions2', () => {
 render('functions3', () => {
   const strings = ['hello', 'world'];
 
-  const upcaseAll = (array) => {
-
-  };
+  const upcaseAll = (array) => array.map((element) => element.toUpperCase());
 
   return upcaseAll(strings);
 });
